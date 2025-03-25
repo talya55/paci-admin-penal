@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_URI} !^/static/
+  RewriteCond %{REQUEST_URI} !\.(css|js|map|gif|jpg|png|svg|woff|woff2|ttf|otf|eot)$
+  RewriteRule ^ /index.html [L]
+</IfModule>
